@@ -59,4 +59,5 @@ return {
     -- better increment/decrement
     ["+"] = { "g<C-a>", desc = "Increment number" },
     ["-"] = { "g<C-x>", desc = "Descrement number" },
+  },
 }
