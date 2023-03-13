@@ -50,8 +50,13 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
+  -- terminal mappings
   t = {
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["<C-q>"] = { "<C-\\><C-n>", desc = "Terminal normal mode" },
+    ["<esc><esc>"] = { "<C-\\><C-n>:q<cr>", desc = "Terminal quit" },
   },
+  x = {
+    -- better increment/decrement
+    ["+"] = { "g<C-a>", desc = "Increment number" },
+    ["-"] = { "g<C-x>", desc = "Descrement number" },
 }
