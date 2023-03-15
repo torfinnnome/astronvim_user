@@ -1,8 +1,7 @@
 return {
-	{ "ethanholz/nvim-lastplace" },
 	{ "sindrets/diffview.nvim" },
-	{ "tpope/vim-fugitive" },
-	{ "arouene/vim-ansible-vault" },
+	{ "tpope/vim-fugitive", lazy = true, cmd = {'G', 'Git'},  },
+	{ "arouene/vim-ansible-vault", lazy = true, },
 
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
