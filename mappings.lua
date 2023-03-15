@@ -48,7 +48,10 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
+    ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
+    ["<C-k>"] = { "<cmd>Telescope buffers sort_lastused=true<cr>", desc = "List buffers" },
   },
   -- terminal mappings
   t = {
