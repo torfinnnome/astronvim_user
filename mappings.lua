@@ -9,38 +9,32 @@ return {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<C-Down>"] = false,
-		["<C-Left>"] = false,
-		["<C-Right>"] = false,
-		["<C-Up>"] = false,
+    ["<C-Left>"] = false,
+    ["<C-Right>"] = false,
+    ["<C-Up>"] = false,
     -- resize with arrows
-		["<Up>"] = {
-			function()
-				require("smart-splits").resize_up(2)
-			end,
-			desc = "Resize split up",
-		},
-		["<Down>"] = {
-			function()
-				require("smart-splits").resize_down(2)
-			end,
-			desc = "Resize split down",
-		},
-		["<Left>"] = {
-			function()
-				require("smart-splits").resize_left(2)
-			end,
-			desc = "Resize split left",
-		},
-		["<Right>"] = {
-			function()
-				require("smart-splits").resize_right(2)
-			end,
-			desc = "Resize split right",
-		},
+    ["<Up>"] = {
+      function() require("smart-splits").resize_up(2) end,
+      desc = "Resize split up",
+    },
+    ["<Down>"] = {
+      function() require("smart-splits").resize_down(2) end,
+      desc = "Resize split down",
+    },
+    ["<Left>"] = {
+      function() require("smart-splits").resize_left(2) end,
+      desc = "Resize split left",
+    },
+    ["<Right>"] = {
+      function() require("smart-splits").resize_right(2) end,
+      desc = "Resize split right",
+    },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -48,7 +42,7 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
     ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
     ["<C-k>"] = { "<cmd>Telescope buffers sort_lastused=true<cr>", desc = "List buffers" },
