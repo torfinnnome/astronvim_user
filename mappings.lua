@@ -46,6 +46,9 @@ return {
     ["<S-l>"] = { "<cmd>bnext<cr>", desc = "Next buffer" },
     ["<S-h>"] = { "<cmd>bprevious<cr>", desc = "Previous buffer" },
     ["<C-k>"] = { "<cmd>Telescope buffers sort_lastused=true<cr>", desc = "List buffers" },
+    -- Navigate tabs
+    ["tl"] = { function() vim.cmd.tabnext() end, desc = "Next tab" },
+    ["th"] = { function() vim.cmd.tabprevious() end, desc = "Previous tab" },
   },
   -- terminal mappings
   t = {
