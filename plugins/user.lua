@@ -1,6 +1,6 @@
 return {
 	{ "sindrets/diffview.nvim" },
-	{ "tpope/vim-fugitive", lazy = true, cmd = {'G', 'Git'},  },
+	-- { "tpope/vim-fugitive", lazy = true, cmd = {'G', 'Git'},  },
 	{ "arouene/vim-ansible-vault", lazy = true, },
 
   -- You can also add new plugins here as well:
