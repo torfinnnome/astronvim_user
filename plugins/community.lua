@@ -3,4 +3,6 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.note-taking.neorg" },
+  { import = "astrocommunity.pack.ansible" },
 }
