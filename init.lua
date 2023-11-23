@@ -1,6 +1,7 @@
 return {
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
+  colorscheme = "catppuccin",
   lsp = {
     -- customize lsp formatting options
     formatting = {

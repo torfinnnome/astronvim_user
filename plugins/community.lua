@@ -5,4 +5,15 @@ return {
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.pack.ansible" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  {
+    "catppuccin",
+    opts = {
+      integrations = {
+        neogit = true,
+      },
+      priority = 1000,
+      lazy = false,
+    },
+  },
 }
